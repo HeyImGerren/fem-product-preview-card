@@ -1,0 +1,185 @@
+:root {
+  /* Deep Aquamarine */
+  --clr-primary-100: hsla(157, 36%, 37%, 1);
+  /* Deep Aquamarine (hover) */
+  --clr-primary-150: hsla(157, 43%, 18%, 1);
+  /* Cream (BG) */
+  --clr-primary-200: hsla(28, 38%, 92%, 1);
+  
+  /* Gunmetal */
+  --clr-neutral-100: hsla(212, 21%, 14%, 1);
+  /* Aurometal Saurus */
+  --clr-neutral-200: hsla(228, 12%, 48%, 1);
+  /* Pure White */
+  --clr-neutral-300: hsla(0, 0%, 100%, 1);
+
+  /* Font Family */
+  --ff-primary: 'Montserrat', sans-serif;
+  --ff-secondary: 'Fraunces', serif;
+
+  --ff-company-heading: var(--ff-primary);
+  --ff-product-heading: var(--ff-secondary);
+  --ff-product-paragraph: var(--ff-primary);
+  --ff-product-price: var(--ff-secondary);
+  --ff-product-price-secondary: var(--ff-primary);
+  --ff-item-btn: var(--ff-primary);
+
+  /* Font Weights */
+  --fw-semi-bold: 500;
+  --fw-bold: 700;
+
+  /* Font Sizes */
+  /* 12px */
+  --fs-100: 0.75rem;
+  /* 13px */
+  --fs-200: 0.813rem;
+  /* 14px */
+  --fs-300: 0.875rem;
+  /* 32px */
+  --fs-600: 2rem;
+
+  --ff-company-heading: var(--fs-100);
+  --ff-product-heading: var(--fs-600);
+  --ff-product-paragraph: var(--fs-300);
+  --ff-product-price: var(--fs-600);
+  --ff-product-price-secondary: var(--fs-200);
+  --ff-item-btn: var(--fs-300);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin, this was modified to the below settings */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img,
+picture,
+svg {
+  display: block;
+}
+
+body {
+  padding: 175px 420px;
+  background-color: var(--clr-primary-200);
+}
+
+.card-container {
+  display: flex;
+  border-radius: 10px;
+  background-color: var(--clr-neutral-300);
+  width: 600px;
+  height: 450px;
+}
+
+.image-column {
+  width: 337.694px;
+}
+
+.product-image {
+  border-radius: 10px 0px 0px 10px;
+  height: 100%;
+}
+
+.product-column {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+}
+
+.company-logo {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-100);
+  color: var(--clr-neutral-200);
+  letter-spacing: 5px;
+}
+
+.product-title {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-600);
+  font-weight: var(--fw-bold);
+  line-height: var(--fs-600);
+}
+
+.product-description {
+  color: var(--clr-neutral-200);
+  font-family: var(--ff-primary);
+  font-size: var(--fs-300);
+  font-weight: var(--fw-semi-bold);
+  font-style: normal;
+  line-height: 23px;
+  opacity: 80%;
+}
+
+.product-pricing {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+}
+
+.current-price {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-600);
+  font-weight: var(--fw-bold);
+  line-height: 32px;
+  color: var(--clr-primary-100);
+}
+
+.original-price {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-200);
+  font-weight: var(--fw-semi-bold);
+  line-height: 23px;
+  text-decoration-line: line-through;
+  color: var(--clr-neutral-200);
+  opacity: 80%;
+}
+
+.cart-logo {
+  padding-right: 10px;
+}
+
+.cart-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 0;
+  border-radius: 8px;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-300);
+  font-weight: var(--fw-bold);
+  line-height: normal;
+  background-color: var(--clr-primary-100);
+  color: var(--clr-neutral-300);
+  height: 48px;
+  width: 236px;
+}
+
+.cart-btn:hover {
+  background-color: var(--clr-primary-150);
+}
+
+/* Utility Classes */
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mb-29 {
+  margin-bottom: 29px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
