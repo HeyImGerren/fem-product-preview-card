@@ -67,20 +67,27 @@ svg {
 }
 
 body {
-  padding: 175px 420px;
+  /* padding: 175px 420px; */
+  /* margin-inline: auto; */
+  padding: 10.938rem 26.25rem;
   background-color: var(--clr-primary-200);
 }
 
 .card-container {
   display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
   border-radius: 10px;
   background-color: var(--clr-neutral-300);
-  width: 600px;
-  height: 450px;
+  /* width: 600px; */
+  width: 37.5rem;
+  /* height: 450px; */
+  height: 28.125rem;
 }
 
 .image-column {
-  width: 337.694px;
+  /* width: 337.694px; */
+  width: 21.106rem;
 }
 
 .product-image {
@@ -99,6 +106,7 @@ body {
   font-size: var(--fs-100);
   color: var(--clr-neutral-200);
   letter-spacing: 5px;
+  margin-bottom: 20px;
 }
 
 .product-title {
@@ -106,6 +114,7 @@ body {
   font-size: var(--fs-600);
   font-weight: var(--fw-bold);
   line-height: var(--fs-600);
+  margin-bottom: 24px;
 }
 
 .product-description {
@@ -116,12 +125,14 @@ body {
   font-style: normal;
   line-height: 23px;
   opacity: 80%;
+  margin-bottom: 29px;
 }
 
 .product-pricing {
   display: flex;
   align-items: center;
   gap: 19px;
+  margin-bottom: 30px;
 }
 
 .current-price {
@@ -167,19 +178,47 @@ body {
   background-color: var(--clr-primary-150);
 }
 
-/* Utility Classes */
-.mb-20 {
-  margin-bottom: 20px;
-}
+@media (max-width: 25em) {
+  .card-container {
+    flex-direction: column;
+    width: 21.438rem;
+    height: 40rem;
+  }
+  
+  .image-column {
+    width: 21.481rem;
+    height: 270px;
+  }
 
-.mb-24 {
-  margin-bottom: 24px;
-}
+  .product-image {
+    background-image: url(images/image-product-mobile.jpg);
+    border-radius: 10px 10px 0px 0px;
+    object-fit: cover;
+    width: 100%;
+  }
 
-.mb-29 {
-  margin-bottom: 29px;
-}
+  .company-logo {
+    margin-bottom: 12px;
+  }
 
-.mb-30 {
-  margin-bottom: 30px;
+  .product-title {
+    margin-bottom: 16px;
+  }
+
+  .product-description {
+    margin-bottom: 24px;
+  }
+
+  .product-pricing {
+    margin-bottom: 20px;
+  }
+  
+
+  .product-column {
+    padding: 24px;
+  }
+
+  .cart-btn {
+    width: 295px;
+  }
 }
